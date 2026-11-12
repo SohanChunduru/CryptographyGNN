@@ -1,0 +1,2 @@
+- solver.solver=glucose
+- dataset.eval_path=data/test/crypto/20/*.cnf

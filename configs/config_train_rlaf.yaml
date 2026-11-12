@@ -1,0 +1,69 @@
+# @package _global_
+
+defaults:
+  - _self_
+
+method: grpo
+
+model_name: GNN_Glucose_3SAT
+model_dir: runs/${model_name}
+
+from_checkpoint: null
+
+val_interval: 5
+ckpt_interval: null   # "best.pt" is always saved
+
+training:
+  iterations: 2000
+  cnf_per_iter: 100
+  steps_per_iter: 50
+  clip_ratio: 0.2
+  beta: 1.0
+  kl_penalty: 0.1
+  target_stat: decisions
+  num_samples: 40
+  use_amp: True
+
+dataset:
+  train_path: "data/training/3sat/*/*.cnf"
+  val_path: "data/validation/3sat/*/*.cnf"
+
+solver:
+  solver: glucose
+  num_workers: 8
+  params: # CLI parameters for glucose (not used when solver=march)
+    cpu-lim: 60
+    rnd-freq: 0.0
+    K: 0.1
+
+model:
+  channels: 256
+  num_layers: 10
+  aggr: [mean]
+  feature_encoder: mlp
+  dropout: 0.0
+
+# this is the sigma parameter for the log-normal weight distributions
+scale_sigma: 0.1
+
+loader:
+  batch_size: 20
+  num_workers: 0
+
+optim:
+  lr: 5e-5
+  weight_decay: 0.0
+
+wandb:
+  project: RLAF
+  name: ${model_name}
+
+
+# path to original working directory
+work_dir: ${hydra:runtime.cwd}
+
+# path to folder with data
+data_dir: data
+
+# seed for random number generators in pytorch, numpy and python.random
+seed: 0

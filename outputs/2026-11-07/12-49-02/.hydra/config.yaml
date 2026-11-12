@@ -1,0 +1,12 @@
+dataset:
+  eval_path: data/test/crypto/10/*.cnf
+solver:
+  solver: glucose
+  num_workers: 8
+  params:
+    cpu-lim: 36000
+    rnd-freq: 0.0
+    K: 0.1
+seed: 1729
+save_dir: runs/${solver.solver}
+save_file: solver_stats.csv

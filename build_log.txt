@@ -1,0 +1,92 @@
+rm *.out *.py *.o -f march_nh
+rm: *.out: No such file or directory
+rm: *.py: No such file or directory
+rm: *.o: No such file or directory
+rm: -f: No such file or directory
+rm: march_nh: No such file or directory
+make: *** [clean] Error 1
+gcc-10  -c -O3 -fno-strict-aliasing -Wall -DNDEBUG -fcommon  -o march.o march.c 
+make: gcc-10: No such file or directory
+make: *** [march.o] Error 1
+rm *.out *.py *.o -f march_nh
+rm: *.out: No such file or directory
+rm: *.py: No such file or directory
+rm: *.o: No such file or directory
+rm: -f: No such file or directory
+rm: march_nh: No such file or directory
+make: *** [clean] Error 1
+gcc-10  -c -O3 -fno-strict-aliasing -Wall -DNDEBUG -fcommon  -o march.o march.c 
+make: gcc-10: No such file or directory
+make: *** [march.o] Error 1
+Making dependencies
+rm -f glucose glucose_profile glucose_debug glucose_release glucose_static \
+	  /Users/sohanchunduru/RLAF/solvers/glucose/simp/Main.o /Users/sohanchunduru/RLAF/solvers/glucose/simp/SimpSolver.o /Users/sohanchunduru/RLAF/solvers/glucose/simp/../utils/Options.o /Users/sohanchunduru/RLAF/solvers/glucose/simp/../utils/System.o /Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/Solver.o /Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/lcm.o /Users/sohanchunduru/RLAF/solvers/glucose/simp/Main.op /Users/sohanchunduru/RLAF/solvers/glucose/simp/SimpSolver.op /Users/sohanchunduru/RLAF/solvers/glucose/simp/../utils/Options.op /Users/sohanchunduru/RLAF/solvers/glucose/simp/../utils/System.op /Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/Solver.op /Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/lcm.op /Users/sohanchunduru/RLAF/solvers/glucose/simp/Main.od /Users/sohanchunduru/RLAF/solvers/glucose/simp/SimpSolver.od /Users/sohanchunduru/RLAF/solvers/glucose/simp/../utils/Options.od /Users/sohanchunduru/RLAF/solvers/glucose/simp/../utils/System.od /Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/Solver.od /Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/lcm.od /Users/sohanchunduru/RLAF/solvers/glucose/simp/Main.or /Users/sohanchunduru/RLAF/solvers/glucose/simp/SimpSolver.or /Users/sohanchunduru/RLAF/solvers/glucose/simp/../utils/Options.or /Users/sohanchunduru/RLAF/solvers/glucose/simp/../utils/System.or /Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/Solver.or /Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/lcm.or *.core depend.mk 
+Making dependencies
+Compiling: /Users/sohanchunduru/RLAF/solvers/glucose/simp/Main.or
+Compiling: /Users/sohanchunduru/RLAF/solvers/glucose/simp/SimpSolver.or
+Compiling: utils/Options.or
+Compiling: utils/System.or
+Compiling: core/Solver.or
+Compiling: core/lcm.or
+/Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/lcm.cc:12:13: warning: variable 'num_props' set but not used [-Wunused-but-set-variable]
+   12 |     int     num_props = 0;
+      |             ^
+/Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/lcm.cc:271:9: warning: variable 'beforeSize' set but not used [-Wunused-but-set-variable]
+  271 |     int beforeSize, afterSize;
+      |         ^
+/Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/lcm.cc:271:21: warning: variable 'afterSize' set but not used [-Wunused-but-set-variable]
+  271 |     int beforeSize, afterSize;
+      |                     ^
+/Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/lcm.cc:331:9: warning: variable 'nbGoodReduce' set but not used [-Wunused-but-set-variable]
+  331 |     int nbGoodReduce = 0;
+      |         ^
+/Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/lcm.cc:333:9: warning: variable 'nbSize1' set but not used [-Wunused-but-set-variable]
+  333 |     int nbSize1 = 0, nbSize2 = 0;
+      |         ^
+/Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/lcm.cc:333:22: warning: variable 'nbSize2' set but not used [-Wunused-but-set-variable]
+  333 |     int nbSize1 = 0, nbSize2 = 0;
+      |                      ^
+/Users/sohanchunduru/RLAF/solvers/glucose/simp/../core/lcm.cc:342:18: warning: unused variable 'nblevels' [-Wunused-variable]
+  342 |     unsigned int nblevels;
+      |                  ^~~~~~~~
+7 warnings generated.
+Linking: glucose_static ( /Users/sohanchunduru/RLAF/solvers/glucose/simp/Main.or /Users/sohanchunduru/RLAF/solvers/glucose/simp/SimpSolver.or utils/Options.or utils/System.or core/Solver.or core/lcm.or )
+ld: unknown options: --static 
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [glucose_static] Error 1
+Making dependencies
+rm -f glucose glucose_profile glucose_debug glucose_release glucose_static \
+	  /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/Main.o /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/SimpSolver.o /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../utils/Options.o /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../utils/System.o /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/Solver.o /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/lcm.o /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/Main.op /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/SimpSolver.op /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../utils/Options.op /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../utils/System.op /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/Solver.op /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/lcm.op /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/Main.od /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/SimpSolver.od /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../utils/Options.od /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../utils/System.od /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/Solver.od /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/lcm.od /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/Main.or /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/SimpSolver.or /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../utils/Options.or /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../utils/System.or /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/Solver.or /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/lcm.or *.core depend.mk 
+Making dependencies
+Compiling: /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/Main.or
+Compiling: /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/SimpSolver.or
+Compiling: utils/Options.or
+Compiling: utils/System.or
+Compiling: core/Solver.or
+Compiling: core/lcm.or
+/Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/lcm.cc:12:13: warning: variable 'num_props' set but not used [-Wunused-but-set-variable]
+   12 |     int     num_props = 0;
+      |             ^
+/Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/lcm.cc:271:9: warning: variable 'beforeSize' set but not used [-Wunused-but-set-variable]
+  271 |     int beforeSize, afterSize;
+      |         ^
+/Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/lcm.cc:271:21: warning: variable 'afterSize' set but not used [-Wunused-but-set-variable]
+  271 |     int beforeSize, afterSize;
+      |                     ^
+/Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/lcm.cc:331:9: warning: variable 'nbGoodReduce' set but not used [-Wunused-but-set-variable]
+  331 |     int nbGoodReduce = 0;
+      |         ^
+/Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/lcm.cc:333:9: warning: variable 'nbSize1' set but not used [-Wunused-but-set-variable]
+  333 |     int nbSize1 = 0, nbSize2 = 0;
+      |         ^
+/Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/lcm.cc:333:22: warning: variable 'nbSize2' set but not used [-Wunused-but-set-variable]
+  333 |     int nbSize1 = 0, nbSize2 = 0;
+      |                      ^
+/Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/../core/lcm.cc:342:18: warning: unused variable 'nblevels' [-Wunused-variable]
+  342 |     unsigned int nblevels;
+      |                  ^~~~~~~~
+7 warnings generated.
+Linking: glucose_static ( /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/Main.or /Users/sohanchunduru/RLAF/solvers/glucose_weighted/simp/SimpSolver.or utils/Options.or utils/System.or core/Solver.or core/lcm.or )
+ld: unknown options: --static 
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [glucose_static] Error 1
